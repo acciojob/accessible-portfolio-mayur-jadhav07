@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <header role="banner">
+        <h1 role="heading">John Doe's Portfolio</h1>
+    </header>
 
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About Me</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <img src="https://images.unsplash.com/photo-1602992708529-c9fdb12905c9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image" role="img">
+        <p>Welcome to my professional portfolio website. I am a web developer with a passion for building accessible web applications.</p>
+    </section>
+
+    <section id="projects">
+        <h2 role="heading">Projects</h2>
+        <ul role="list">
+            <li role="listitem">Project A - A web application for task management</li>
+            <li role="listitem">Project B - An e-commerce site for local artists</li>
+            <li role="listitem">Project C - A mobile app for learning new languages</li>
+        </ul>
+    </section>
+
+    <footer role="contentinfo">
+        <p>Contact me at email@example.com</p>
+    </footer>
 </body>
-
 </html>
